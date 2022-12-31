@@ -1,0 +1,12 @@
+<form name="myForm" ng-app="">
+    <div ngClass="div1">
+        <h2>Enter the Username: </h2>
+        <input type="email" id="uname" ng-Model="name" name="uname" placeholder="username" required>
+        <!-- <span ng-show="myForm.uname.$error.email">Not a valid e-mail address</span> -->
+    </div>
+    <div ngClass="div2">
+        <h2>Enter the Password: </h2>
+        <input type="password" ng-model name="password" placeholder="password" required> <br><br>
+    </div>
+    <button type="submit" (click)="onLoginClick()">LOG-IN</button>
+</form>

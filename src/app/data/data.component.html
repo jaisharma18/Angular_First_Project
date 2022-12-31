@@ -1,0 +1,24 @@
+<div *ngIf="isUserLoggedIn">
+    <caption>Display Data from Json File in Angular</caption>
+    <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr *ngFor="let Data of data">
+            <td>{{Data.id}}</td>
+            <td>{{Data.name}}</td>
+            <td>{{Data.email}}</td>
+            <td>{{Data.gender}}</td>
+        </tr>
+    </tbody>
+    </table>
+    <form>
+        <button type="submit" (click)="onLoginClick()">LOG-OUT</button>
+    </form>
+</div>

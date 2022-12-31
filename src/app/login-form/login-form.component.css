@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap');
+
+form{
+    background-color: teal;
+    text-align: center;
+    margin: 120px 390px;
+    border-radius: 10px;
+}
+.div1,.div2{
+    padding: 13px;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    border-radius: 6px;
+    width: 35%;
+    font-size: large;
+}
+button{
+    background-color: orangered;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: 'Quantico', sans-serif;
+    width: 17%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
