@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class LoginFormComponent {
   constructor(private router: Router){ }
 
-  public onLoginClick(){
-    this.router.navigate(["./navigator"]);
+  public onLoginClick(item:any){
+    if(item.uname!="" && item.password!="" && item.uname!=null && item.password!= null)
+      this.router.navigate(["./navigator"]);
   }
 }
